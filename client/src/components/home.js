@@ -2,14 +2,14 @@ import { React, useState, useEffect, useCallback } from "react";
 import data from "./data";
 import axios from "axios";
 import { Navigation, Pagination, Scrollbar, A11y } from "swiper";
-import { EffectFlip } from "swiper";
+import { EffectCards } from "swiper";
 import icon from "../images/heart.svg";
 import iconfill from "../images/heart-fill.svg";
 import image from "../images/user.svg";
 import { Swiper, SwiperSlide } from "swiper/react";
 //swiper stylesheets
 import "swiper/css";
-import "swiper/css/effect-flip";
+import "swiper/css/effect-cards";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
@@ -67,8 +67,8 @@ function Home({ username, email, phone }) {
       >
         <div style={{ width: "20%" }}>
           <Swiper
-            modules={[Navigation, Pagination, Scrollbar, A11y, EffectFlip]}
-            effect={"flip"}
+            modules={[Navigation, Pagination, Scrollbar, A11y, EffectCards]}
+            effect={"cards"}
             //   navigation={true}
             pagination={{ clickable: true }}
           >
@@ -82,6 +82,7 @@ function Home({ username, email, phone }) {
                   display: "flex",
                   flexDirection: "column",
                   alignItems: "center",
+                  backgroundColor:'white'
                 }}
               >
                 <div
