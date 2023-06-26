@@ -18,6 +18,9 @@ npm install
 cd ../server
 npm install
 ```
+
+### Make sure to create a .env file to hold necessary data.
+
 ## Usage
 
 To start the application, simply run:
